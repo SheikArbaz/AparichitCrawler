@@ -59,7 +59,7 @@ def crawl_web(seed):
 			union(to_crawl,get_all_links(content))
 			crawled.append(page)
 	return crawled
-crawled=crawl_web('Seed.html')
+crawled=crawl_web('https://www.udemy.com/')
 print "Crawled:-"
 for _ in crawled:
 	print _
